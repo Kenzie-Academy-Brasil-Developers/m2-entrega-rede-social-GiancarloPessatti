@@ -1,12 +1,273 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./src/styles/reset.css">
+    <link rel="stylesheet" href="./src/styles/colors.css">
+    <link rel="stylesheet" href="./src/styles/header.css">
+    <link rel="stylesheet" href="./src/styles/Login.css">
+    <link rel="stylesheet" href="./src/styles/registrar.css">
+    <link rel="stylesheet" href="./src/styles/Homepage.css">
+    <link rel="stylesheet" href="./src/styles/modal.css">
+    <link rel="stylesheet" href="./src/styles/Text.css">
     <title>Rede Social</title>
 </head>
+
 <body>
-    
+
+    <header>
+
+        <div class="menucontent">
+
+            <h2>TechPosters</h2>
+            <div class="buttons-menu">
+                <button class="irparalogin" data-control-modal="modal-login">Login</button>
+                <button class="registrar"  data-control-modal="modal-post">Registro</button>
+            </div>
+
+
+        </div>
+
+    </header>
+    <section class="corpodosite">
+
+        <div class="login">
+
+            <div class="login-content">
+
+                <h1>Login</h1>
+                <input placeholder="Seu e-mail" type="email" name="" id="loginemail">
+                <input placeholder="Sua senha" type="password" name="" id="loginpassword">
+                <button class="logarlogin">Logar</button>
+                <span>Ainda não possui cadastro?</span>
+                <button class="irpararegistro">Ir para a página de registro</button>
+
+            </div>
+
+        </div>
+
+        <div class="modal-wrapper" id="modal-login">
+            <div class="modal">
+                <div class="modal-content">
+
+                    <div class="modal-header">
+                        <h3 class="modal-title">Acesso não autorizado</h3>
+                        <button class="modal-close" data-control-modal="modal-login">Entendi</button>
+                    </div>
+                    <div class="modal-body">
+                        Essa conta não existe, logo não pode acessar a página de posts!
+                    </div>
+
+                </div>
+
+            </div>
+        </div>
+
+
+        <div class="cadastro">
+
+            <div class="cadastro-content">
+
+                <button class="voltar">Voltar</button>
+                <div class="quadradoh1">
+                    <h1>Cadastro</h1>
+                </div>
+                <input placeholder="Seu nome" type="text" name="" id="nomecadastro">
+                <input placeholder="Seu e-mail" type="email" name="" id="cadastroemail">
+                <input placeholder="Sua senha" type="password" name="" id="cadastropassword">
+                <input placeholder="Qual o seu trabalho?" type="text" name="" id="cadastrotrabalho">
+                <input placeholder="Url da sua foto de perfil" type="text" name="" id="cadastrofoto">
+                <button class="RegistroRegistrar">Registrar</button>
+                <span>Já possui login?</span>
+                <button class="irpara-login">Ir para a página de Login</button>
+
+            </div>
+
+
+        </div>
+
+        <div class="Homepage">
+
+            <div class="homepage-content">
+
+                <div class="perfil">
+
+                    <div class="perfilsite" id="meuperfil">
+
+                        <figure class="suafotoperfil">
+                            <img src="./src/assets/download.jpg" alt="">
+                        </figure>
+                        <div class="suascaracteristicas">
+                            <h2>Seu Nome</h2>
+                            <h3>Sua profissao e algo</h3>
+                        </div>
+                        <span>365 Seguidores</span>
+
+                    </div>
+                    <div class="fazerpost">
+
+                        <input type="text" placeholder="Digitar título do post">
+                        <textarea placeholder="Digitar descrição do post" name="" id="seupost" cols="30"
+                            rows="10"></textarea>
+
+                    </div>
+
+                </div>
+
+                <div class="sugestoes">
+                    <h2>Sugestões para você seguir</h2>
+                    <ul>
+
+                        <li>
+                            <div class="perfilsite">
+
+                                <figure class="suafotoperfil">
+                                    <img src="./src/assets/download.jpg" alt="">
+                                </figure>
+                                <div class="suascaracteristicas">
+                                    <h2>Seu Nome</h2>
+                                    <h3>Sua profissao e algo</h3>
+                                </div>
+                            </div>
+                            <button>Seguir</button>
+                        </li>
+                        <li>
+                            <div class="perfilsite">
+
+                                <figure class="suafotoperfil">
+                                    <img src="./src/assets/download.jpg" alt="">
+                                </figure>
+                                <div class="suascaracteristicas">
+                                    <h2>Seu Nome</h2>
+                                    <h3>Sua profissao e algo</h3>
+                                </div>
+                            </div>
+                            <button>Seguir</button>
+                        </li>
+                        <li>
+                            <div class="perfilsite">
+
+                                <figure class="suafotoperfil">
+                                    <img src="./src/assets/download.jpg" alt="">
+                                </figure>
+                                <div class="suascaracteristicas">
+                                    <h2>Seu Nome</h2>
+                                    <h3>Sua profissao e algo</h3>
+                                </div>
+                            </div>
+                            <button>Seguir</button>
+                        </li>
+
+                    </ul>
+                </div>
+
+                <div class="TodosPosts">
+
+                    <h2>Posts</h2>
+                    <ul>
+
+                        <li>
+                            <div class="perfilsite" id="">
+
+                                <figure class="suafotoperfil">
+                                    <img src="./src/assets/download.jpg" alt="">
+                                </figure>
+                                <div class="suascaracteristicas">
+                                    <h2>Seu Nome</h2>
+                                    <h3>Sua profissao e algo</h3>
+                                </div>
+                            </div>
+                            <h2>Título do Post</h2>
+                            <p>Breve descrição do post</p>
+                            <div class="bottompost">
+                                <button data-control-modal="modal-post">Abrir Post</button>
+                                <img src="./src/assets/heartBlack.png" alt="">
+                                <span>3</span>
+                            </div>
+
+                        </li>
+                        <li>
+                            <div class="perfilsite" id="">
+
+                                <figure class="suafotoperfil">
+                                    <img src="./src/assets/download.jpg" alt="">
+                                </figure>
+                                <div class="suascaracteristicas">
+                                    <h2>Seu Nome</h2>
+                                    <h3>Sua profissao e algo</h3>
+                                </div>
+                            </div>
+                            <h2>Título do Post</h2>
+                            <p>Breve descrição do post</p>
+                            <div class="bottompost">
+                                <button data-control-modal="modal-post">Abrir Post</button>
+                                <img src="./src/assets/heartBlack.png" alt="">
+                                <span>3</span>
+                            </div>
+
+                        </li>
+                        <li>
+                            <div class="perfilsite" id="">
+
+                                <figure class="suafotoperfil">
+                                    <img src="./src/assets/download.jpg" alt="">
+                                </figure>
+                                <div class="suascaracteristicas">
+                                    <h2>Seu Nome</h2>
+                                    <h3>Sua profissao e algo</h3>
+                                </div>
+                            </div>
+                            <h2>Título do Post</h2>
+                            <p>Breve descrição do post</p>
+                            <div class="bottompost">
+                                <button data-control-modal="modal-post">Abrir Post</button>
+                                <img src="./src/assets/heartBlack.png" alt="">
+                                <span>3</span>
+                            </div>
+
+                        </li>
+
+                    </ul>
+
+                </div>
+
+            </div>
+
+
+        </div>
+
+        <div class="HomepageModal" id="modal-post">
+            <div class="homepagemodal">
+                <div class="modal-content">
+
+                    <div class="modal-header">
+                        <button class="modal-close" id="modal-close-post" data-control-modal="modal-post">X</button>
+                        <div class="perfilsite" id="">
+
+                            <figure class="suafotoperfil">
+                                <img src="./src/assets/download.jpg" alt="">
+                            </figure>
+                            <div class="suascaracteristicas">
+                                <h2>Seu Nome</h2>
+                                <h3>Sua profissao e algo</h3>
+                            </div>
+                        </div>
+                        
+                    </div>
+                    <div class="modal-body">
+                        <h2>Título do Post</h2>
+                        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Repellat itaque nam atque rem a, quibusdam autem sint dicta assumenda, obcaecati eos at id amet, optio pariatur inventore officia libero magnam!Lorem, ipsum dolor sit amet consectetur adipisicing elit. Repellat itaque nam atque rem a, quibusdam autem sint dicta assumenda, obcaecati eos at id amet, optio pariatur inventore officia libero magnam!Lorem, ipsum dolor sit amet consectetur adipisicing elit. Repellat itaque nam atque rem a, quibusdam autem sint dicta assumenda, obcaecati eos at id amet, optio pariatur inventore officia libero magnam!Lorem, ipsum dolor sit amet consectetur adipisicing elit. Repellat itaque nam atque rem a, quibusdam autem sint dicta assumenda, obcaecati eos at id amet, optio pariatur inventore officia libero magnam!Lorem, ipsum dolor sit amet consectetur adipisicing elit. Repellat itaque nam atque rem a, quibusdam autem sint dicta assumenda, obcaecati eos at id amet, optio pariatur inventore officia libero magnam!</p>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+
+    </section>
+    <script type="module" src="./src/scripts/models/modal.js"></script>
 </body>
+
 </html>

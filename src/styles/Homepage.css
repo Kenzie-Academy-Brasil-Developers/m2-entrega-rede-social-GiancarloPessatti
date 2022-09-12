@@ -1,0 +1,149 @@
+.Homepage{
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--);
+}
+
+.homepage-content{
+
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    gap: 2rem;
+    margin: 1rem;
+    margin-top: 30%;
+
+}
+
+.perfil{
+
+    display: flex;
+    flex-direction: column;
+
+
+}
+
+.perfilsite{
+
+    display: flex;
+    gap: 1rem;
+    position: relative;
+    width: 10rem;
+}
+
+.suafotoperfil{
+
+    margin: 0;
+
+}
+
+.suafotoperfil img {
+
+    width: 3rem;
+    height: 3rem;
+    border-radius: 50px;
+
+}
+
+.suascaracteristicas{
+
+    display: flex;
+    flex-direction: column;
+   
+
+}
+
+.suascaracteristicas h2{
+
+    font-size: 1rem;
+    margin-top: 0.3rem;
+}
+
+.suascaracteristicas h3{
+
+    font-size: 0.6rem;
+    margin-top: 0;
+}
+.perfilsite span{
+
+    margin-top: 0.4rem;
+    font-size: 0.7rem;
+
+}
+
+.fazerpost{
+
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    margin-top: 2rem;
+
+}
+
+.sugestoes{
+
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+
+
+}
+
+.sugestoes ul {
+
+    display: flex;
+    justify-content: flex-start;
+    overflow: scroll;
+    max-width: 20rem;
+    gap: 2rem;
+
+}
+
+.sugestoes ul li{
+
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+
+}
+
+#meuperfil{
+
+    width: auto;
+
+}
+
+.TodosPosts{
+
+    display: flex;
+    flex-direction: column;
+
+
+}
+
+.TodosPosts ul {
+
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    padding: 0;
+
+}
+
+.bottompost{
+
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 1rem;
+
+}
+
+.HomepageModal{
+
+    display: none;
+    
+
+}

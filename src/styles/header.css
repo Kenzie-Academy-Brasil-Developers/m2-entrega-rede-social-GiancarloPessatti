@@ -1,0 +1,27 @@
+
+header{
+
+
+    position: fixed;
+    width: 100vw;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: var(--cor-gray1);
+    z-index: 10;
+
+}
+.menucontent{
+
+    display: flex;
+    justify-content: space-between;
+    width: 80%;
+
+}
+.buttons-menu{
+
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+
+}
