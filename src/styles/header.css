@@ -25,3 +25,15 @@ header{
     gap: 0.5rem;
 
 }
+.sair{
+    display: none;
+}
+
+.irparalogin{
+    display: none;
+}
+.registrar{
+
+    display: none;
+
+}

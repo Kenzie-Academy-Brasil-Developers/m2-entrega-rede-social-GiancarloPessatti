@@ -6,6 +6,8 @@
     margin-bottom: 60%;
     background-color: var(--cor-White);
     border-radius: 6px;
+    justify-content: center;
+    align-items: center;
 }
 
 .cadastro-content{
@@ -25,6 +27,6 @@
 .voltar{
 
     position: absolute;
-    right: 0.3rem;
-    top: 1.3rem;
+    right: -3rem;
+    top: 0rem;
 }

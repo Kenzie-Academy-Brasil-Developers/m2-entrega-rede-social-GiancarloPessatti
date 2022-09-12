@@ -24,8 +24,9 @@
 
             <h2>TechPosters</h2>
             <div class="buttons-menu">
-                <button class="irparalogin" data-control-modal="modal-login">Login</button>
-                <button class="registrar"  data-control-modal="modal-post">Registro</button>
+                <button class="irparalogin show-modal">Login</button>
+                <button class="registrar show-modal">Registro</button>
+                <button class="sair">Sair</button>
             </div>
 
 
@@ -34,7 +35,7 @@
     </header>
     <section class="corpodosite">
 
-        <div class="login">
+        <div class="login show-modal">
 
             <div class="login-content">
 
@@ -98,20 +99,21 @@
                     <div class="perfilsite" id="meuperfil">
 
                         <figure class="suafotoperfil">
-                            <img src="./src/assets/download.jpg" alt="">
+                            <img id="minhaimagem" src="./src/assets/download.jpg" alt="">
                         </figure>
                         <div class="suascaracteristicas">
-                            <h2>Seu Nome</h2>
-                            <h3>Sua profissao e algo</h3>
+                            <h2 id="meunome">Seu Nome</h2>
+                            <h3 id="minhaprofissao">Sua profissao e algo</h3>
                         </div>
-                        <span>365 Seguidores</span>
+                        <span id="meusseguidores">365 Seguidores</span>
 
                     </div>
                     <div class="fazerpost">
 
-                        <input type="text" placeholder="Digitar título do post">
+                        <input id="inputpost" type="text" placeholder="Digitar título do post">
                         <textarea placeholder="Digitar descrição do post" name="" id="seupost" cols="30"
                             rows="10"></textarea>
+                            <button id="botaopostar">Postar</button>
 
                     </div>
 
@@ -119,9 +121,9 @@
 
                 <div class="sugestoes">
                     <h2>Sugestões para você seguir</h2>
-                    <ul>
+                    <ul class="ulsugestoes">
 
-                        <li>
+                        <!-- <li>
                             <div class="perfilsite">
 
                                 <figure class="suafotoperfil">
@@ -159,7 +161,7 @@
                                 </div>
                             </div>
                             <button>Seguir</button>
-                        </li>
+                        </li> -->
 
                     </ul>
                 </div>
@@ -167,9 +169,9 @@
                 <div class="TodosPosts">
 
                     <h2>Posts</h2>
-                    <ul>
+                    <ul id="ulposts">
 
-                        <li>
+                        <!-- <li>
                             <div class="perfilsite" id="">
 
                                 <figure class="suafotoperfil">
@@ -228,7 +230,7 @@
                                 <span>3</span>
                             </div>
 
-                        </li>
+                        </li> -->
 
                     </ul>
 
@@ -248,18 +250,18 @@
                         <div class="perfilsite" id="">
 
                             <figure class="suafotoperfil">
-                                <img src="./src/assets/download.jpg" alt="">
+                                <img id="imgmodal" src="./src/assets/download.jpg" alt="">
                             </figure>
                             <div class="suascaracteristicas">
-                                <h2>Seu Nome</h2>
-                                <h3>Sua profissao e algo</h3>
+                                <h2 id="h2modal">Seu Nome</h2>
+                                <h3 id="h3modal">Sua profissao e algo</h3>
                             </div>
                         </div>
                         
                     </div>
                     <div class="modal-body">
-                        <h2>Título do Post</h2>
-                        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Repellat itaque nam atque rem a, quibusdam autem sint dicta assumenda, obcaecati eos at id amet, optio pariatur inventore officia libero magnam!Lorem, ipsum dolor sit amet consectetur adipisicing elit. Repellat itaque nam atque rem a, quibusdam autem sint dicta assumenda, obcaecati eos at id amet, optio pariatur inventore officia libero magnam!Lorem, ipsum dolor sit amet consectetur adipisicing elit. Repellat itaque nam atque rem a, quibusdam autem sint dicta assumenda, obcaecati eos at id amet, optio pariatur inventore officia libero magnam!Lorem, ipsum dolor sit amet consectetur adipisicing elit. Repellat itaque nam atque rem a, quibusdam autem sint dicta assumenda, obcaecati eos at id amet, optio pariatur inventore officia libero magnam!Lorem, ipsum dolor sit amet consectetur adipisicing elit. Repellat itaque nam atque rem a, quibusdam autem sint dicta assumenda, obcaecati eos at id amet, optio pariatur inventore officia libero magnam!</p>
+                        <h2 id="titulomodal">Título do Post</h2>
+                        <p id="textomodal">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Repellat itaque nam atque rem a, quibusdam autem sint dicta assumenda, obcaecati eos at id amet, optio pariatur inventore officia libero magnam!Lorem, ipsum dolor sit amet consectetur adipisicing elit. Repellat itaque nam atque rem a, quibusdam autem sint dicta assumenda, obcaecati eos at id amet, optio pariatur inventore officia libero magnam!Lorem, ipsum dolor sit amet consectetur adipisicing elit. Repellat itaque nam atque rem a, quibusdam autem sint dicta assumenda, obcaecati eos at id amet, optio pariatur inventore officia libero magnam!Lorem, ipsum dolor sit amet consectetur adipisicing elit. Repellat itaque nam atque rem a, quibusdam autem sint dicta assumenda, obcaecati eos at id amet, optio pariatur inventore officia libero magnam!Lorem, ipsum dolor sit amet consectetur adipisicing elit. Repellat itaque nam atque rem a, quibusdam autem sint dicta assumenda, obcaecati eos at id amet, optio pariatur inventore officia libero magnam!</p>
                     </div>
 
                 </div>
@@ -267,8 +269,9 @@
         </div>
 
     </section>
-    <script type="module" src="./src/scripts/models/modal.js"></script>
+    <script type="module" src="./src/scripts/index.js"></script> 
     <script type="module" src="./src/scripts/models/api.js"></script>
+    <script type="module" src="./src/scripts/models/modal.js"></script>
 </body>
 
 </html>

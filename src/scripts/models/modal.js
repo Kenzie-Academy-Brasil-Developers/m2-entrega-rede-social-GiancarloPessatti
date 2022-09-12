@@ -1,4 +1,4 @@
-class Modal{
+export class Modal{
 
     static alterandoModal (){
 
@@ -7,6 +7,7 @@ class Modal{
             buttonsControllersModal[index].addEventListener("click", ()=>{
                 let modalId = buttonsControllersModal[index].getAttribute("data-control-modal")
                 document.getElementById(modalId).classList.toggle("show-modal")
+                
             })
         }
 

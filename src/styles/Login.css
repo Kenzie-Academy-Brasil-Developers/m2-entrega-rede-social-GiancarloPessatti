@@ -16,6 +16,8 @@
     margin-bottom: 60%;
     background-color: var(--cor-White);
     border-radius: 6px;
+    align-items: center;
+    justify-content: center;
 }
 
 .login-content{
