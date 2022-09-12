@@ -1,0 +1,60 @@
+#loginemail {
+
+    border: 2px solid var(--cor-gray4);
+    background-color: transparent;
+    padding: 1rem;
+
+}
+
+#loginpassword {
+
+    border: 2px solid var(--cor-gray4);
+    background-color: transparent;
+    padding: 1rem;
+
+}
+
+.inputscadastro {
+
+    border: 2px solid var(--cor-gray4);
+    background-color: transparent;
+    padding: 1rem;
+
+
+}
+
+#modalcloselogin {
+
+    background-color: white;
+    color: black;
+    padding: 1rem;
+    border-radius: 8px;
+    border: 0px solid transparent;
+}
+
+#inputpost{
+
+    padding: 1rem;
+    background-color: transparent;
+    border: 1px solid var(--cor-gray3);
+    width: 60%;
+ 
+
+}
+
+#seupost{
+
+    padding: 1rem;
+    background-color: transparent;
+    border: 1px solid var(--cor-gray3);
+    width: 60%;
+
+}
+
+#botaopostar{
+
+    background-color: #868E96;
+    width: fit-content;
+    opacity: 50%;
+
+}

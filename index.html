@@ -11,6 +11,8 @@
     <link rel="stylesheet" href="./src/styles/Login.css">
     <link rel="stylesheet" href="./src/styles/registrar.css">
     <link rel="stylesheet" href="./src/styles/Homepage.css">
+    <link rel="stylesheet" href="./src/styles/buttoncs.css">
+    <link rel="stylesheet" href="./src/styles/inputs.css">
     <link rel="stylesheet" href="./src/styles/modal.css">
     <link rel="stylesheet" href="./src/styles/Text.css">
     <title>Rede Social</title>
@@ -24,7 +26,7 @@
 
             <h2>TechPosters</h2>
             <div class="buttons-menu">
-                <button class="irparalogin show-modal">Login</button>
+                <button class="irparalogin show-modal clicado">Login</button>
                 <button class="registrar show-modal">Registro</button>
                 <button class="sair">Sair</button>
             </div>
@@ -52,11 +54,11 @@
 
         <div class="modal-wrapper" id="modal-login">
             <div class="modal">
-                <div class="modal-content">
+                <div id="modalcontentid" class="modal-content">
 
                     <div class="modal-header">
                         <h3 class="modal-title">Acesso não autorizado</h3>
-                        <button class="modal-close" data-control-modal="modal-login">Entendi</button>
+                        <button id="modalcloselogin" class="modal-close" data-control-modal="modal-login">Entendi</button>
                     </div>
                     <div class="modal-body">
                         Essa conta não existe, logo não pode acessar a página de posts!
@@ -76,11 +78,11 @@
                 <div class="quadradoh1">
                     <h1>Cadastro</h1>
                 </div>
-                <input placeholder="Seu nome" type="text" name="" id="nomecadastro">
-                <input placeholder="Seu e-mail" type="email" name="" id="cadastroemail">
-                <input placeholder="Sua senha" type="password" name="" id="cadastropassword">
-                <input placeholder="Qual o seu trabalho?" type="text" name="" id="cadastrotrabalho">
-                <input placeholder="Url da sua foto de perfil" type="text" name="" id="cadastrofoto">
+                <input placeholder="Seu nome" class="inputscadastro" type="text" name="" id="nomecadastro">
+                <input class="inputscadastro" placeholder="Seu e-mail" type="email" name="" id="cadastroemail">
+                <input class="inputscadastro" placeholder="Sua senha" type="password" name="" id="cadastropassword">
+                <input class="inputscadastro" placeholder="Qual o seu trabalho?" type="text" name="" id="cadastrotrabalho">
+                <input class="inputscadastro" placeholder="Url da sua foto de perfil" type="text" name="" id="cadastrofoto">
                 <button class="RegistroRegistrar">Registrar</button>
                 <span>Já possui login?</span>
                 <button class="irpara-login">Ir para a página de Login</button>

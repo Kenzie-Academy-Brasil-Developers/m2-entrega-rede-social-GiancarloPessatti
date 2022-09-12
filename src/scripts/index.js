@@ -58,6 +58,8 @@ class Login {
             const divRegistro = document.getElementsByClassName("cadastro")[0]
             divRegistro.classList.toggle("show-modal")
             divLogin.classList.toggle("show-modal")
+            botaoirparalogin.classList.toggle("clicado")
+            botaoirpararegistro.classList.toggle("clicado")
 
         })
         botaoirpararegistro.addEventListener("click", () => {
@@ -66,6 +68,9 @@ class Login {
             const divRegistro = document.getElementsByClassName("cadastro")[0]
             divRegistro.classList.toggle("show-modal")
             divLogin.classList.toggle("show-modal")
+            botaoirpararegistro.classList.toggle("clicado")
+            botaoirparalogin.classList.toggle("clicado")
+
 
         })
 
@@ -113,6 +118,8 @@ class Usuario {
 
             botao.addEventListener("click", () => {
 
+                botao.classList.toggle("seguindoclicado")
+                botao.innerText = "Seguindo"
                 const id = botao.id
                 const body = {
 

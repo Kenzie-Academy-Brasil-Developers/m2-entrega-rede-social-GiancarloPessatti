@@ -1,0 +1,120 @@
+
+.irparalogin{
+
+background-color: transparent;
+color: var(--cor-White);
+border-radius: 6px;
+border: 0px solid transparent;
+}
+
+
+.registrar{
+
+    background-color: transparent;
+    color: var(--cor-White);
+    border-radius: 6px;
+    border: 0px solid transparent;
+}
+
+
+.sair{
+
+    background-color: transparent;
+    color: var(--cor-White);
+    border-radius: 6px;
+    border: 0px solid transparent;
+
+}
+
+.clicado{
+
+    background-color: var(--cor-gray2);
+    padding: 0.5rem;
+}
+
+.logarlogin{
+
+    width: 100%;
+    background-color: var(--cor-bg-principal); 
+    border: 0px solid transparent;
+    color: white;
+    height: 2rem;
+
+
+}
+
+.irpararegistro{
+
+    background-color: transparent;
+    border: 1px solid black;
+    height: 1.3rem;
+    width: 100%;
+    cursor: pointer;
+
+}
+
+.ulsugestoes li button {
+
+    border-radius: 2px;
+    border: 1px solid var(--cor-gray2);
+    width: fit-content;
+
+}
+
+.seguindoclicado{
+
+    background-color: var(--cor-bg-principal);
+    color: white;
+
+}
+
+.voltar{
+
+    background-color: transparent;
+    border: 1px solid black;
+    height: 1.3rem;
+    cursor: pointer;
+
+}
+
+.RegistroRegistrar{
+
+    width: 100%;
+    background-color: var(--cor-bg-principal); 
+    border: 0px solid transparent;
+    color: white;
+    height: 2rem;
+
+
+}
+
+.irpara-login{
+
+    background-color: transparent;
+    border: 1px solid black;
+    height: 1.3rem;
+    cursor: pointer;
+
+}
+
+.bottompost button{
+
+    padding: 0.5rem;
+    color: white;
+    border-radius: 2px;
+    background-color: var(--cor-gray1);
+    border: 0px solid transparent;
+
+}
+
+#modal-close-post{
+
+    background-color: var(--cor-gray4);
+    color: var(--cor-gray1);
+    border-radius: 50%;
+    padding: 0.4rem;
+    width: 1.5;
+    height: 1.5;
+    border: 0px solid transparent;
+
+}

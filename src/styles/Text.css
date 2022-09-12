@@ -3,3 +3,20 @@
     color: var(--cor-White);
 
 }
+
+.login-content span{
+
+    font-size: 0.8rem;
+
+}
+
+#textomodal{
+
+    color: var(--cor-gray2);
+}
+
+#ulposts li p{
+
+    color: var(--cor-gray2);
+
+}

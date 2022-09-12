@@ -90,6 +90,13 @@
     position: relative;
 }
 
+#modalcontentid{
+
+    background-color: var(--cor-bg-principal);
+    color: white;
+
+}
+
 @keyframes animateModal {
     0% {
         transform: translateY(-50%);
